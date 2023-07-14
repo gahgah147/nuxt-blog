@@ -13,6 +13,7 @@
         <NuxtLink to="/show">前往 /show</NuxtLink>
         <NuxtLink to="/profile">前往 /profile</NuxtLink>
         <NuxtLink to="/login">前往 Login</NuxtLink>
+        <NuxtLink to="/login_2">前往 login_2</NuxtLink>
       </div>
     </div>
   </div>
