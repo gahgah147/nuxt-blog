@@ -55,8 +55,15 @@ export default defineEventHandler(async (event) => {
     })
   }
 
+  // 舊版的
+  // const jwtTokenPayload = {
+  //   id: userRecord.id
+  // }
+
   const jwtTokenPayload = {
-    id: userRecord.id
+    id: userInfo.sub,
+    nickname: userInfo.name,
+    email: userInfo.email
   }
 
   const maxAge = 60 * 60 * 24 * 7
@@ -78,14 +85,22 @@ export default defineEventHandler(async (event) => {
     path: '/'
   })
 
+  // 舊版本
+  // return {
+  //   id: userRecord.id,
+  //   provider: {
+  //     name: userRecord.providerName,
+  //     userId: userRecord.providerUserId
+  //   },
+  //   nickname: userRecord.nickname,
+  //   avatar: userRecord.avatar,
+  //   email: userRecord.email
+  // }
+
   return {
-    id: userRecord.id,
-    provider: {
-      name: userRecord.providerName,
-      userId: userRecord.providerUserId
-    },
-    nickname: userRecord.nickname,
-    avatar: userRecord.avatar,
-    email: userRecord.email
+    id: userInfo.id,
+    nickname: userInfo.name,
+    avatar: userInfo.picture,
+    email: userInfo.email
   }
 })

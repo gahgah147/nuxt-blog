@@ -14,6 +14,7 @@
         <NuxtLink to="/profile">前往 /profile</NuxtLink>
         <NuxtLink to="/login">前往 Login</NuxtLink>
         <NuxtLink to="/login_2">前往 login_2</NuxtLink>
+        <NuxtLink to="/cookie">前往 cookie</NuxtLink>
       </div>
     </div>
   </div>
