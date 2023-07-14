@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev ",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -27,7 +27,7 @@
     "prettier-plugin-tailwindcss": "^0.3.0",
     "prisma": "^4.15.0",
     "vue-gtag-next": "^1.14.0",
-    "vue3-google-login": "^2.0.15"
+    "vue3-google-login": "^2.0.18"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
