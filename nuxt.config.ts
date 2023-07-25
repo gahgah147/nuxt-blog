@@ -12,4 +12,7 @@ export default defineNuxtConfig({
     },
     jwtSignSecret: 'PLEASE_REPLACE_WITH_YOUR_KEY',
   },
+  build: {
+    transpile: ['@headlessui/vue']
+  }
 });
