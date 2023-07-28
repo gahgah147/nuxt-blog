@@ -112,10 +112,6 @@ const { push: pushNotify } = useNotification()
 const runtimeConfig = useRuntimeConfig()
 const { googleClientId: GOOGLE_CLIENT_ID } = runtimeConfig.public
 
-definePageMeta({
-  layout: false
-})
-
 const loginData = reactive({
   email: '',
   password: ''
@@ -160,4 +156,12 @@ const handleGoogleLogin = async () => {
     pushNotify('error', '登入失敗', error.value?.data?.message ?? '未知錯誤')
   }
 }
+
+definePageMeta({
+  layout: 'teal',
+  middleware: 'logged-in-redirect',
+  pageTransition: {
+    name: 'rotate'
+  }
+})
 </script>
