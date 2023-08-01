@@ -126,7 +126,7 @@ const onUpdateSummary = (summary) => {
   articleData.summary = summary
 }
 
-definePageMeta({
-  middleware: 'manage-auth'
-})
+// definePageMeta({
+//   middleware: 'manage-auth'
+// })
 </script>
