@@ -23,7 +23,7 @@
                 文章
               </NuxtLink>
               <ClientOnly>
-                <NavigationBarAvatarMenu v-if="userProfile.id" />
+                <NavigationBarAvatarMenu v-if="userProfile?.id" />
                 <NuxtLink
                   v-else
                   class="px-3 py-2 text-gray-700 transition hover:text-emerald-500"
@@ -45,4 +45,5 @@
   
   const userStore = useUserStore()
   const userProfile = computed(() => userStore.profile)
+
   </script>

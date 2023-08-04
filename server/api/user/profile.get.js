@@ -2,7 +2,7 @@ import db from '@/server/db'
 
 export default defineEventHandler(async (event) => {
   const user = event.context?.auth?.user
-
+  
   if (!user?.id) {
     throw createError({
       statusCode: 401,
