@@ -171,4 +171,12 @@ const handleGoogleLogin = async () => {
     pushNotify('error', '登入失敗', error.value?.data?.message ?? '未知錯誤')
   }
 }
+
+definePageMeta({
+  layout: 'green',
+  middleware: 'logged-in-redirect',
+  pageTransition: {
+    name: 'rotate'
+  }
+})
 </script>

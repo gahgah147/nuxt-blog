@@ -78,4 +78,10 @@ watch(error, (newError) => {
     pushNotify('error', '取得文章失敗', error.value?.data?.message ?? '未知錯誤')
   }
 })
+
+definePageMeta({
+  pageTransition: {
+    name: 'rotate'
+  }
+})
 </script>
