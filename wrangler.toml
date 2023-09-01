@@ -1,0 +1,9 @@
+name = "nuxt-app-hello"
+main = "./.output/server/index.mjs"
+workers_dev = true
+compatibility_date = "2022-10-15"
+
+[site]
+bucket = ".output/public"
+
+NITRO_PRESET=cloudflare npm run build
