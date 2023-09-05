@@ -51,5 +51,6 @@
   
   const userStore = useUserStore()
   const userProfile = computed(() => userStore.profile)
+  
 
   </script>
