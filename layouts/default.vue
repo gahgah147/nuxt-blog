@@ -18,6 +18,12 @@
             <div class="flex flex-row items-center">
               <NuxtLink
                 class="px-3 py-2 text-gray-700 transition hover:text-emerald-500"
+                to="/practice"
+              >
+                鐵人賽練習
+              </NuxtLink>
+              <NuxtLink
+                class="px-3 py-2 text-gray-700 transition hover:text-emerald-500"
                 to="/articles"
               >
                 文章
